@@ -12,3 +12,5 @@
 
 - [系统工程导论](2020-spring/Intro_to_System_Engineering.md)
 
+- [计量经济学](2020-spring/Econometrics.md)
+
