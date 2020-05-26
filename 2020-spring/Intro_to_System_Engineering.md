@@ -420,3 +420,6 @@ $$m\times N + m\times n + n + n$$
 - 一致性检验 【L9p36】
     - 一致性度量 CI RI 【L9p38】
 
+---
+
+[Back to top](#系统工程导论)
