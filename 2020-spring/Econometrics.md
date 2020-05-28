@@ -146,6 +146,63 @@ $$Y_{it} = \alpha_i + \beta_1 X_{it} + \lambda_t + u_{it}$$
 
 ---
 
+## Time series regression and forecasting
 
+- Autocorrelation 【L9.1p13】
+    - The divisor is $T$, not $T-j$. 
 
+- Strong/Weak stationary 【L9.1p18】
 
+### AR models
+
+### Autoregressive Distributed Lag (ADL) model
+
+ADL(p, r):
+
+$$Y_t = \beta_0 + \beta_1 Y_{t-1} + ... + \beta_p Y_{t-p} + \delta_1 X_{t-1} + ... + \delta_r X_{t-r} + u_t$$
+
+- **Granger causality test** 【L9.1p41】
+    - Test of predictive content
+    - F-test on X's
+
+- Mean squared forecast error (MSFE)
+    - MSFE = $var(u_{t+1})$ + uncertainty arising because of estimation error
+    - If the sample size is large, $MSFE \approx var(u_{t+1})$
+
+- Three ways to estimate RMSFE 【L9.1p45】
+    - Approximation by SER. $RMSFE \approx \sigma_{u}$
+    - Use an actual forecast history. 
+    - Use a simulated forecast history. 
+
+- Forecast interval isn't a CI
+
+- Lag length selection using information criteria
+    - BIC 【L9.1p52】
+    - AIC 【L9.1p53】 is not consistent
+    - Generalized BIC 【L9.1p55】
+
+### Nonstationarity
+
+#### Structural breaks
+
+#### Trends
+
+- Deterministic trend
+
+- Stochastic trend
+    - Random walk 【L9.2p8】
+    - Random walk with drift 【L9.2p9】
+
+- Problems caused by trends 【L9.2p16】
+
+- Unit root detection
+    - Dickey-Fuller test
+        - Intercept only
+        - intercept & time trend
+    - Reject DF test if the t-statistic is less than the critical value. 
+    - $H_0$: unit root. $H_a$: level or trend stationary.
+    - If it has unit root, use diff. 
+
+---
+
+[Back to top](#计量经济学)
