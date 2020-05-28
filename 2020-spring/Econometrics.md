@@ -54,6 +54,97 @@
 
 --- 
 
+## Binary regression
+
+### Linear probability model
+
+- $E(Y) = Pr(Y=1)$
+
+- Interpretation of $\beta_1$: change in probability that $Y=1$ given $\Delta x$. 
+
+- $\hat{Y}$: the predicted probability that $Y=1$ given X. 
+
+- Disadvantages 【L7p9】 can be solved by nonlinear models
+
+### Probit and Logit model
+
+- Probit regression uses the standard normal cdf. 
+    - $Pr(Y=1|X) = \Phi (\beta_0 + \beta_1 X)$
+    - z-value: $\beta_0 + \beta_1 X$
+
+- Logit regression uses the logistic cdf. 
+    - $Pr(Y=1|X) = F (\beta_0 + \beta_1 X)$, $F(x) = \frac{1}{1-e^{-x}}$
+
+- **MLE**
+    - In large samples, MLE estimators are consistent, normally distributed and (asymptotically) efficient. 
+    - Probit MLE with no X 【L7p29】
+
+- Measures of fit
+    - The fraction correctly predicted
+    - **Pseudo-$R^2$**: measures the **improvement** in the value of the log likelihood, relative to having no X. **越大越好**
+
+$$\text{pseudo-}R^2 = 1 - \frac{ln L(f_{probit}^{max})}{ln L(f_{Bernoulli}^{max})}$$
+
+--- 
+
+## Panel data regression
+
+- Why are panel data useful? 【L8p4】
+
+$$Y_{it} = \beta_0 + \beta_1 X_{it} + \beta_2 Z_i + u_{it}$$
+
+- Z doesn't change overtime, but not observable. Omitted variable bias. Can be eliminated by panel data regression. 
+
+### Fixed effects form
+
+$$Y_{it} = \alpha_i + \beta_1 X_{it} + u_{it}, \quad \alpha_i = \beta_0 + \beta_2 Z_i$$
+
+- Three situations 【L8p18】
+    - If $\alpha_i = \alpha_j$ and $\beta_i = \beta_j$, use pooled OLS. 
+    - If $\alpha_i \neq \alpha_j$ and $\beta_i = \beta_j$, fixed effects/random effects
+    - If $\alpha_i \neq \alpha_j$ and $\beta_i \neq \beta_j$, variable coefficients model
+
+### Binary form
+
+$$Y_{it} = \beta_0 + \beta_1 X_{it} + \gamma_1 D1_i + \gamma_2 D2_i + ... + u_{it}$$
+
+- Leave out D3, dummy variable trap
+
+### Fixed effects estimation
+
+Three estimation methods:
+
+- "n-1 binary regressors" OLS
+    - Only practical when $n$ isn't too big. 
+
+- "Entity-demeaned" OLS
+
+$$\tilde{Y}_{it} = \beta_1 \tilde{X}_{it} + \tilde{u}_{it}$$
+
+$$\tilde{Y}_{it} = Y_{it} - \frac{1}{T} \sum_{i=1}^{T} Y_{it}, \quad \tilde{X}_{it}..., \quad \tilde{u}_{it}...$$
+
+- "Changes" sepcification, without an intercept(only works for $T=2$)
+
+### Time fixed effects
+
+$$Y_{it} = \beta_0 + \beta_1 X_{it} + \beta_2 Z_i + \beta_3 S_t + u_{it}$$
+
+- Time fixed effects only
+    - Similar to the fixed effects. 
+
+- Both entity and time effects
+
+$$Y_{it} = \alpha_i + \beta_1 X_{it} + \lambda_t + u_{it}$$
+
+- **Assumptions** for panel data 【L8p35】
+    - ...Assumption #5 【L8p39】
+    - If Assumption #5 fails, OLS $\beta_1$ will still be unbiased and consistent, but SE will be wrong. Understate the true uncertainty. 
+
+- **Standard errors**
+
+- Limitations of Panel data regression 【L8p62】
+
+---
 
 
 

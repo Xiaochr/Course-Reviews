@@ -12,7 +12,17 @@
 
 - [系统工程导论](2020-spring/Intro_to_System_Engineering.md)
 
+- [商务数据分析](2020-spring/BDA.md)
+
 - [计量经济学](2020-spring/Econometrics.md)
 
-- [商务数据分析](2020-spring/BDA.md)
+- [对策、决策与排队论](2020-spring/GDQ.md)
+
+- [应用时间序列分析](2020-spring/TSA.md)
+
+- [智能技术](2020-spring/AI.md)
+
+- [系统分析与设计](2020-spring/SAD.md)
+
+- [运筹学2](2020-spring/OR2.md)
 
