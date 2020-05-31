@@ -205,4 +205,16 @@ $$Y_t = \beta_0 + \beta_1 Y_{t-1} + ... + \beta_p Y_{t-p} + \delta_1 X_{t-1} + .
 
 ---
 
+- [t value table](http://socr.ucla.edu/Applets.dir/T-table.html)
+
+- [F value table](http://www.socr.ucla.edu/Applets.dir/F_Table.html)
+
+- [Z table](http://socr.ucla.edu/Applets.dir/Z-table.html)
+
+- [Chi-square table](http://socr.ucla.edu/Applets.dir/ChiSquareTable.html)
+
+- ADF test 【L9.2p25】
+
+---
+
 [Back to top](#计量经济学)
