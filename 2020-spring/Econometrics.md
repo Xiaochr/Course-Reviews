@@ -44,7 +44,9 @@
 
 - Under these assumptions, TSLS and its t-statistic are normally distributed. 
 
-- Checking instrument validity
+- Consequences of weak instruments 【L6p39】
+
+- Checking instrument validity 【L6p37】
     - Instrument relevance
         - relevant: at least one of the $\pi$s are nonzero
         - weak: all are either 0 or nearly 0
@@ -60,7 +62,7 @@
 
 - $E(Y) = Pr(Y=1)$
 
-- Interpretation of $\beta_1$: change in probability that $Y=1$ given $\Delta x$. 
+- **Interpretation** of $\beta_1$: change in probability that $Y=1$ given $\Delta x$. 
 
 - $\hat{Y}$: the predicted probability that $Y=1$ given X. 
 
@@ -79,7 +81,7 @@
     - In large samples, MLE estimators are consistent, normally distributed and (asymptotically) efficient. 
     - Probit MLE with no X 【L7p29】
 
-- Measures of fit
+- Measures of fit 【L7p39】
     - The fraction correctly predicted
     - **Pseudo-$R^2$**: measures the **improvement** in the value of the log likelihood, relative to having no X. **越大越好**
 
