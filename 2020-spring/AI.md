@@ -1,5 +1,7 @@
 # 智能技术
 
+只记考试范围内的。Prolog编程不考，神经网络不考。
+
 ## Predicate calculus
 
 - Knowledge 【L2-1p3】
@@ -88,6 +90,8 @@
     - **Most general unifier** (mgu) 【L2-3p21】
     - Unification algorithm 【L2-3p24】
 
+---
+
 ## State space search
 
 - Graph
@@ -106,36 +110,95 @@
 
 - Using State Space to Represent Reasoning with Predicate Logic
 
-### Heuristic search 【L2-3p49】
+### Heuristic search 【L3p49】
 
-### Hill-Climbing 【L2-3p58】
+### Hill-Climbing 【L3p58】
 
 - It can not recover from failures, without backtracking because it keeps no history
 
 - Major problem: local maxima
 
-### Best-first search 【L2-3p62】
+### Best-first search 【L3p62】
 
-- General evaluation function 【L2-3p66】
+- General evaluation function 【L3p66】
 
-- Algorithm A and A* 【L2-3p69】
+- Algorithm A and A* 【L3p69】
 
-- Effectiveness of a heuristic search algorithm 【L2-3p71】
+- Effectiveness of a heuristic search algorithm 【L3p71】
     - Admissible
     - Monotone
     - Informedness
 
 ### Heuristics in games
 
-- Minimax 【L2-3p76】
-    - N-ply look-ahead 【L2-3p84】
+- Minimax 【L3p76】
+    - N-ply look-ahead 【L3p84】
 
-- **$\alpha - \beta$ pruning** 【L2-3p93】
+- **$\alpha - \beta$ pruning** 【L3p93】
+
+---
 
 ## Introduction to prolog
 
+- Representing facts, rules and goals
+
+- Backtracking, recursion and prolog reasoning
+
+- List and recursion
+    - Unification can be used to build list structure
+
+- Use cut to control search
+
+---
+
 ## Reasoning in uncertain situation
 
+- Concept of uncertainty 【L6p3】
+    - 证据/已知事实的不确定性
+    - 规则/知识的不确定性
+    - 结论的不确定性
 
+- 不确定性度量、计算方法 【L6p6】
 
+### Bayes theory
+
+- 全概率公式、贝叶斯公式 【L6p13】
+
+- 不同情形
+    - 证据组合的不确定计算 【L6p17】
+    - 顺序规则的不确定计算 【L6p19】
+    - 并行规则的不确定计算
+    - 其他情形
+        - 一个证据支持多个结论
+        - 多个证据支持多个结论
+
+### Bayesian belief network
+
+- D-seperation 【L6p32】
+    - A path is blocked if there is an intermediate node V in the path with either the properties: 
+        - The connection is serial or diverging and the state of V is known. 
+        - The connection is converging and neither V nor any of V's children have evidence. 
+
+- 联合概率分布 【L6p35】
+
+### Certainty factors
+
+- 信任增长度与不信任增长度 【L6p39】
+    - MB(h, e), MD(h, e)
+
+- 可信度 【L6p43】
+    - CF(h, e) = MB(h, e) - MD(h, e)
+
+- 带阈值的不确定推理
+    - 组合证据的不确定计算
+        - 证据的合取、析取 【L6p50】
+    - 并行规则的不确定计算 【L6p51】
+    - 顺序规则的不确定计算
+
+- 加权的不确定推理 【L6p56】
+    - 证据组合的不确定计算
+
+---
+
+[Back to top](#智能技术)
 
