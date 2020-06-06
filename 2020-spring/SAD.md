@@ -40,5 +40,55 @@
 
 - When to use the methods? 【L1p84】
 
+---
+
+## Understanding and Modeling Organizational Systems
+
+- How to investigate and understand an organization?
+
+- Three Main Forces Interacting to Shape Organizations 【L2p8】
+    - Levels of management
+    - Organizational culture
+    - Design of organizations
+
+### Organizations as systems 【L2p12】
+
+- System Outputs Serve as Feedback that Compares Performance with Goals
+
+- Organizational environments 【L2p15】
+
+- Virtual organizations and virtual teams 【L2p17】
+    - Benefits
+
+- Taking a systems perspective 【L2p19】
+
+- ERP 【L2p22】
+
+### Depict systems graphically
+
+- Entity-relationship model 【L2p28】
+    - Entities: fundamental, associative, attributive
+
+- Context-level data flow diagrams 【L2p25】
+
+- Use case modeling 【L2p37】
+    - Describes what a system does without describing how the system does
+    - Actors, use case symbols, connecting lines
+    - A use case always provides 3 things 【L2p40】
+    - Use case relations 【L2p41】
+    - Developing use case diagrams/scenarios
+    - Four steps to creat use cases 【L2p53】
+    - Reasons 【L2p55】
+
+### Levels of management
+
+- Three levels 【L2p57】
+    - Operations control
+    - Managerial planning and control
+    - Strategic management
+
+### Organizational culture 【L2p63】
+
+- Verbal/Nonverbal Symbolism
 
 

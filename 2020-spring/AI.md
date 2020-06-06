@@ -43,7 +43,7 @@
     - Negated 【L2-2p15】
 
 - Form of First order predicate logic
-    - Simple predicate 【L2-2p7】 p(X, Y, Z)
+    - Simple predicate 【L2-2p7】 p(X, Y, Z) p: 可以多个字母，但一定要小写字母开始！而变量X要以大写字母开始
     - Functions 
     - Compound: using logical connectives
 
@@ -102,34 +102,43 @@
 
 - Goal-driven
 
-- Backtracking
+- Backtracking 【book p68】
+    - SL, NSL, DE
 
 - Breadth-first search
+    - Closed, open 
+    - 新的加在closed**右边**
 
 - Depth-first search
+    - Closed, open 
+    - 新的加在closed**左边**
 
 - Using State Space to Represent Reasoning with Predicate Logic
 
 ### Heuristic search 【L3p49】
 
-### Hill-Climbing 【L3p58】
+#### Hill-Climbing 【L3p58】
 
 - It can not recover from failures, without backtracking because it keeps no history
 
 - Major problem: local maxima
 
-### Best-first search 【L3p62】
+#### Best-first search 【L3p62】
+
+- Closed, open 在closed中要排序 【book p94】
 
 - General evaluation function 【L3p66】
 
 - Algorithm A and A* 【L3p69】
+    - Best-first search: A
+    - $h(n)$ is less than or equal to the cost of the min path from n to goal: A*
 
 - Effectiveness of a heuristic search algorithm 【L3p71】
-    - Admissible
+    - Admissible: A* is admissible
     - Monotone
     - Informedness
 
-### Heuristics in games
+#### Heuristics in games
 
 - Minimax 【L3p76】
     - N-ply look-ahead 【L3p84】
@@ -143,6 +152,8 @@
 - Representing facts, rules and goals
 
 - Backtracking, recursion and prolog reasoning
+    - 回溯
+    - 修改clause的顺序来避免死循环
 
 - List and recursion
     - Unification can be used to build list structure
@@ -169,6 +180,7 @@
     - 顺序规则的不确定计算 【L6p19】
     - 并行规则的不确定计算
     - 其他情形
+        - 多个证据支持一个结论
         - 一个证据支持多个结论
         - 多个证据支持多个结论
 
