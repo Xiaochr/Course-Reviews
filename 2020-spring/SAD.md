@@ -4,7 +4,7 @@
 
 ## Contents
 
-1. [Systems, Roles, and Development Methodologies](##Lecture1)
+1. [Systems, Roles, and Development Methodologies](#Lecture1)
 2. [Understanding and Modeling Organizational Systems](##Lecture2)
 3. [Project management](##Lecture3)
 4. [Information Gathering: Interactive Methods](##Lecture4)
@@ -23,7 +23,7 @@
 
 ---
 
-## Lecture1
+# Lecture1
 
 Systems, Roles, and Development Methodologies
 
