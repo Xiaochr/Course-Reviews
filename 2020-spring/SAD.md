@@ -5,21 +5,21 @@
 ## Contents
 
 1. [Systems, Roles, and Development Methodologies](#Lecture1)
-2. [Understanding and Modeling Organizational Systems](##Lecture2)
-3. [Project management](##Lecture3)
-4. [Information Gathering: Interactive Methods](##Lecture4)
-5. [Information Gathering: Unobtrusive Methods](##Lecture5)
-6. [Agile modeling and prototyping](##Lecture6)
-7. [Using dataflow diagrams](##Lecture7)
-8. [Analyzing Systems Using Data Dictionaries](##Lecture8)
-9. [Process specifications](##Lecture9)
-10. [Object Oriented Systems Analysis and Design Using UML](##Lecture10)
-11. [Designing effective output](##Lecture11)
-12. [Designing effective input](##Lecture12)
-13. [Designing databases](##Lecture13)
-14. [HCI](##Lecture14)
-15. [Designing accurate data entry process](##Lecture15)
-16. [Quality assurance and implementation](##Lecture16)
+2. [Understanding and Modeling Organizational Systems](#Lecture2)
+3. [Project management](#Lecture3)
+4. [Information Gathering: Interactive Methods](#Lecture4)
+5. [Information Gathering: Unobtrusive Methods](#Lecture5)
+6. [Agile modeling and prototyping](#Lecture6)
+7. [Using dataflow diagrams](#Lecture7)
+8. [Analyzing Systems Using Data Dictionaries](#Lecture8)
+9. [Process specifications](#Lecture9)
+10. [Object Oriented Systems Analysis and Design Using UML](#Lecture10)
+11. [Designing effective output](#Lecture11)
+12. [Designing effective input](#Lecture12)
+13. [Designing databases](#Lecture13)
+14. [HCI](#Lecture14)
+15. [Designing accurate data entry process](#Lecture15)
+16. [Quality assurance and implementation](#Lecture16)
 
 ---
 
@@ -69,7 +69,7 @@ Systems, Roles, and Development Methodologies
 
 ---
 
-## Lecture2
+# Lecture2
 
 Understanding and Modeling Organizational Systems
 
@@ -124,7 +124,7 @@ Understanding and Modeling Organizational Systems
 
 ---
 
-## Lecture3
+# Lecture3
 
 Project management
 
@@ -214,7 +214,7 @@ Project management
 
 ---
 
-## Lecture4
+# Lecture4
 
 Information Gathering: Interactive Methods
 
@@ -295,7 +295,7 @@ Information Gathering: Interactive Methods
 
 ---
 
-## Lecture5
+# Lecture5
 
 Information Gathering: Unobtrusive Methods
 
@@ -345,7 +345,7 @@ Information Gathering: Unobtrusive Methods
 
 ---
 
-## Lecture6
+# Lecture6
 
 Agile modeling and prototyping
 
@@ -420,7 +420,7 @@ Agile modeling and prototyping
 
 ---
 
-## Lecture7
+# Lecture7
 
 Using dataflow diagrams
 
@@ -468,7 +468,7 @@ Using dataflow diagrams
 
 ---
 
-## Lecture8
+# Lecture8
 
 Analyzing Systems Using Data Dictionaries
 
@@ -508,7 +508,7 @@ Analyzing Systems Using Data Dictionaries
 
 ---
 
-## Lecture9
+# Lecture9
 
 Process Specifications and Structured Decisions
 
@@ -552,7 +552,7 @@ Process Specifications and Structured Decisions
 
 ---
 
-## Lecture10
+# Lecture10
 
 Object Oriented Systems Analysis and Design Using UML
 
@@ -621,7 +621,7 @@ Object Oriented Systems Analysis and Design Using UML
 
 ---
 
-## Lecture11
+# Lecture11
 
 Designing effective output
 
@@ -694,7 +694,7 @@ Designing effective output
 
 ---
 
-## Lecture12
+# Lecture12
 
 Designing effective input
 
@@ -734,7 +734,7 @@ Designing effective input
 
 ---
 
-## Lecture13
+# Lecture13
 
 Designing databases
 
@@ -789,7 +789,7 @@ Designing databases
 
 ---
 
-## Lecture14
+# Lecture14
 
 HCI
 
@@ -857,7 +857,7 @@ HCI
 
 ---
 
-## Lecture15
+# Lecture15
 
 Designing accurate data entry process
 
@@ -903,7 +903,7 @@ Designing accurate data entry process
 
 ---
 
-## Lecture16
+# Lecture16
 
 Quality assurance and implementation
 
