@@ -4,26 +4,28 @@
 
 ## Contents
 
-1. [Systems, Roles, and Development Methodologies](##1)
-2. [Understanding and Modeling Organizational Systems](##2)
-3. [Project management](##3)
-4. [Information Gathering: Interactive Methods](##4)
-5. [Information Gathering: Unobtrusive Methods](##5)
-6. [Agile modeling and prototyping](##6)
-7. [Using dataflow diagrams](##7)
-8. [Analyzing Systems Using Data Dictionaries](##8)
-9. [Process specifications](##9)
-10. [Object Oriented Systems Analysis and Design Using UML](##10)
-11. [Designing effective output](##11)
-12. [Designing effective input](##12)
-13. [Designing databases](##13)
-14. [HCI](##14)
-15. [Designing accurate data entry process](##15)
-16. [Quality assurance and implementation](##16)
+1. [Systems, Roles, and Development Methodologies](##Lecture1)
+2. [Understanding and Modeling Organizational Systems](##Lecture2)
+3. [Project management](##Lecture3)
+4. [Information Gathering: Interactive Methods](##Lecture4)
+5. [Information Gathering: Unobtrusive Methods](##Lecture5)
+6. [Agile modeling and prototyping](##Lecture6)
+7. [Using dataflow diagrams](##Lecture7)
+8. [Analyzing Systems Using Data Dictionaries](##Lecture8)
+9. [Process specifications](##Lecture9)
+10. [Object Oriented Systems Analysis and Design Using UML](##Lecture10)
+11. [Designing effective output](##Lecture11)
+12. [Designing effective input](##Lecture12)
+13. [Designing databases](##Lecture13)
+14. [HCI](##Lecture14)
+15. [Designing accurate data entry process](##Lecture15)
+16. [Quality assurance and implementation](##Lecture16)
 
 ---
 
-<h2 id="1"> Systems, Roles, and Development Methodologies </h2>
+## Lecture1
+
+Systems, Roles, and Development Methodologies
 
 [Back to top](#系统分析与设计)
 
@@ -67,7 +69,9 @@
 
 ---
 
-<h2 id="2">Understanding and Modeling Organizational Systems</h2>
+## Lecture2
+
+Understanding and Modeling Organizational Systems
 
 [Back to top](#系统分析与设计)
 
@@ -120,7 +124,9 @@
 
 ---
 
-<h2 id="3"> Project management </h3>
+## Lecture3
+
+Project management
 
 [Back to top](#系统分析与设计)
 
@@ -208,7 +214,9 @@
 
 ---
 
-<h2 id="4">Information Gathering: Interactive Methods </h2>
+## Lecture4
+
+Information Gathering: Interactive Methods
 
 [Back to top](#系统分析与设计)
 
@@ -287,7 +295,9 @@
 
 ---
 
-<h2 id="5">Information Gathering: Unobtrusive Methods</h2>
+## Lecture5
+
+Information Gathering: Unobtrusive Methods
 
 [Back to top](#系统分析与设计)
 
@@ -335,7 +345,9 @@
 
 ---
 
-<h2 id="6">Agile modeling and prototyping</h2>
+## Lecture6
+
+Agile modeling and prototyping
 
 [Back to top](#系统分析与设计)
 
@@ -408,7 +420,9 @@
 
 ---
 
-<h2 id="7">Using dataflow diagrams</h2>
+## Lecture7
+
+Using dataflow diagrams
 
 [Back to top](#系统分析与设计)
 
@@ -454,7 +468,9 @@
 
 ---
 
-<h2 id="8">Analyzing Systems Using Data Dictionaries</h2>
+## Lecture8
+
+Analyzing Systems Using Data Dictionaries
 
 [Back to top](#系统分析与设计)
 
@@ -492,7 +508,9 @@
 
 ---
 
-<h2 id="9">Process Specifications and Structured Decisions</h2>
+## Lecture9
+
+Process Specifications and Structured Decisions
 
 [Back to top](#系统分析与设计)
 
@@ -534,7 +552,9 @@
 
 ---
 
-<h2 id="10">Object Oriented Systems Analysis and Design Using UML</h2>
+## Lecture10
+
+Object Oriented Systems Analysis and Design Using UML
 
 [Back to top](#系统分析与设计)
 
@@ -601,7 +621,9 @@
 
 ---
 
-<h2 id="11">Designing effective output</h2>
+## Lecture11
+
+Designing effective output
 
 [Back to top](#系统分析与设计)
 
@@ -672,7 +694,9 @@
 
 ---
 
-<h2 id="12">Designing effective input</h2>
+## Lecture12
+
+Designing effective input
 
 [Back to top](#系统分析与设计)
 
@@ -710,7 +734,9 @@
 
 ---
 
-<h2 id="13">Designing databases</h2>
+## Lecture13
+
+Designing databases
 
 [Back to top](#系统分析与设计)
 
@@ -763,7 +789,9 @@
 
 ---
 
-<h2 id="14">HCI</h2>
+## Lecture14
+
+HCI
 
 [Back to top](#系统分析与设计)
 
@@ -829,7 +857,9 @@
 
 ---
 
-<h2 id="15">Designing accurate data entry process</h2>
+## Lecture15
+
+Designing accurate data entry process
 
 [Back to top](#系统分析与设计)
 
@@ -873,7 +903,9 @@
 
 ---
 
-<h2 id="16">Quality assurance and implementation</h2>
+## Lecture16
+
+Quality assurance and implementation
 
 [Back to top](#系统分析与设计)
 
