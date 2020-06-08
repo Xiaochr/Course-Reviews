@@ -1,5 +1,7 @@
 # Queueing models
 
+[Back to OR2](OR2.md)
+
 ## General results
 
 $X(t)$: The number of customers in the system at time t
@@ -192,8 +194,5 @@ $$a = \lambda + aP$$
     - $a_i < s_i u_i$
 
 - Limiting: 每个就按单个的M/M/s算。
-
-
-
 
 

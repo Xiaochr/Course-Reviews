@@ -184,4 +184,38 @@ $$\lim_{t \rightarrow \infty} \frac{C(t)}{t} = \frac{E(C_1)}{E(T_1)}$$
 
 ---
 
+## 猜测的题型
+
+- 给描述来判断用什么模型
+    - DTMC, CTMC, renewal process, cumulative process, SMP, queueing models, queueing network
+
+- Limiting distributions
+    - 包括写出 P、R 等矩阵
+
+- First passage time
+
+- Cost model
+    - 包括Occupancy times M矩阵。
+    - 也涉及到排队模型
+
+- Queueing model
+    - Performance: L, W, ...
+    - 包括生灭过程的 $\rho$, $p_i$
+    - Queueing network
+
+- Optimal design
+    - Newsvendor model
+
+- Optimal control
+    - MDP
+        - 建模
+        - 优化
+    - SMDP
+        - 建模
+        - 优化
+
+- 一些概率的证明
+
+---
+
 [Back to top](#运筹2)
