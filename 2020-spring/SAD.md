@@ -38,7 +38,8 @@ Systems, Roles, and Development Methodologies
     - Characteristics of information 【L1p22】
     - Life cycle of information 【L1p23】
 
-- Information systems 【L1p26】
+- **Information systems** 【L1p26】
+    - IS components
     - Three Different Aspects of IT Impact on Organizations 【L1p30】
     - Changes in perception 【L1p31】
     - Roles
@@ -48,22 +49,20 @@ Systems, Roles, and Development Methodologies
         - ERP
         - Wireless and mobile systems
 
-- Roles of the system analyst 【L1p53】
+- Roles of the **system analyst** 【L1p53】
     - Consultant, supporting expert, agent of change
 
 - Qualities of the system analyst 【L1p56】
 
-- The Methodologies of IS’ Development
+- The Methodologies of IS’ Development: **SDLC, OO, Agile** 【L1p58】
     - Systems Development Life Cycle (SDLC) 【L1p59】
         - **Seven phases**
         - The impact of maintenance 【L1p70】
-    - Case tools
-
-- Overview of Systems Development Methods 【L1p75】
-    - Agile methods
+        - **Case tools** 【L1p73】
+    - Agile methods 【L1p75】
         - Agile approach, agile values, 4 agile resources, 5 stages of agile development
     - Object Oriented (OO) Systems Analysis and Design 【L1p81】
-    - Unified Modeling Language (UML) Phases 【L1p82】
+        - Unified Modeling Language (UML) Phases 【L1p82】
 
 - When to use the methods? 【L1p84】
 
@@ -82,7 +81,7 @@ Understanding and Modeling Organizational Systems
     - Organizational culture
     - Design of organizations
 
-### Organizations as systems 【L2p12】
+### **Organizations as systems** 【L2p12】
 
 - System Outputs Serve as Feedback that Compares Performance with Goals
 
@@ -91,7 +90,7 @@ Understanding and Modeling Organizational Systems
 - Virtual organizations and virtual teams 【L2p17】
     - Benefits
 
-- Taking a systems perspective 【L2p19】
+- Taking a **systems perspective** 【L2p19】
 
 - ERP 【L2p22】
 
@@ -113,7 +112,7 @@ Understanding and Modeling Organizational Systems
 
 ### Levels of management
 
-- Three levels 【L2p57】
+- **Three levels** 【L2p57】
     - Operations control
     - Managerial planning and control
     - Strategic management
@@ -142,7 +141,7 @@ Project management
 - Internal/External factors
 
 - Problems 【L3p13】
-    - Problem definition steps
+    - **Problem definition steps**
 
 - Selection of projects 【L3p16】
 
@@ -152,7 +151,7 @@ Project management
 
 ### Determining feasibility 【L3p23】
 
-- Three key elements of feasibility 【L3p24】
+- Three key elements of **feasibility** 【L3p24】
     - Technical feasibility
     - Economic feasibility
     - Operational feasibility
@@ -164,16 +163,19 @@ Project management
 - Hardware and software needs 【L3p36】
     - Steps in choosing hardware and software
     - Workloads
-    - Evaluating hardware
+    - **Evaluating hardware** 【L3p41】
         - Management, users, system analysts
     - Advantages/Disadvantages
     - Evaluating vendor support 【L3p45】
-    - Software alternatives
-    - Software evaluation 【L3p50】
+    - **Software alternatives** 【L3p48】
+        - Creating custom software
+        - Purchasing COTS packages
+        - Using an ASP (outsourcing)
+    - **Software evaluation** 【L3p50】
 
 ### Activity planning and Control 【L3p54】
 
-- Identifying and Forecasting Costs and Benefits 【L3p55】
+- Identifying and Forecasting **Costs and Benefits** 【L3p55】
     - Judgment methods
     - Estimation of trends
     - Tangible benefits 【L3p59】 
@@ -191,7 +193,7 @@ Project management
 - Estimating time 【L3p72】
     - Break into 3 major activities
 
-- Project scheduling 【L3p75】
+- Project **scheduling** 【L3p75】
     - Gantt charts
     - PERT diagram
         - Advantages 【L3p78】
@@ -208,7 +210,7 @@ Project management
     - Project failures
         - Fishborn diagram 【L3p87】
 
-- The system proposal 【L3p89】
+- The system **proposal** 【L3p89】
 
 - Effective use of tables/graphs
 
@@ -236,7 +238,7 @@ Information Gathering: Interactive Methods
 
 - Steps of interview 【L4p15】
 
-- Question types 【L4p18】
+- **Question** types 【L4p18】
     - Open-ended
         - Advantages/Disadvantages 【L4p21】
     - Closed-ended
@@ -247,7 +249,7 @@ Information Gathering: Interactive Methods
     - Probes
         - May be either open or closed
 
-- Arranging questions 【L4p28】
+- **Arranging** questions 【L4p28】
     - Pyramid
     - Funnel
     - Diamond
@@ -258,7 +260,7 @@ Information Gathering: Interactive Methods
 
 ### Joint application design 【L4p38】
 
-- Conditions that Support the Use of JAD 【L4p39】
+- **Conditions that Support the Use of JAD** 【L4p39】
 
 - Participants and roles of JAD meeting: 【L4p40】
     - User, section leader, observers, executive sponsor, IS/IT analyst, scribe
@@ -303,7 +305,7 @@ Information Gathering: Unobtrusive Methods
 
 - Unobtrusive methods 【L5p4】
 
-### Sampling
+### **Sampling**
 
 - Needs for sampling 【L5p8】
 
@@ -328,7 +330,7 @@ Information Gathering: Unobtrusive Methods
 
 ### Observation 【L5p24】
 
-- Analyst's playscript
+- **Analyst's playscript**
 
 ### STROBE 【L5p28】
 
@@ -361,7 +363,7 @@ Agile modeling and prototyping
 
 - Prototyping tools 【L6p10】
 
-- Four types of prototyping 【L6p11】
+- **Four types of prototyping** 【L6p11】
     - Patch-up
     - Nonoperational
     - First-of-a-series
@@ -376,7 +378,9 @@ Agile modeling and prototyping
 
 - User's role in prototyping
 
-### Rapid Application Development (RAD) 【L6p25】
+### Rapid Application Development (**RAD**) 【L6p25】
+
+- An OO approach?
 
 - RAD phases and activities
     - Requirements planning 【L6p28】
@@ -393,7 +397,7 @@ Agile modeling and prototyping
 
 ### Agile modeling 【L6p36】
 
-- Values of Agile Modeling 【L6p38】
+- **Values of Agile Modeling** 【L6p38】
 
 - Basic principles 【L6p39】
 
@@ -402,7 +406,7 @@ Agile modeling and prototyping
 - Four resource control variables 【L6p43】
     - Time, cost, quality, scope
 
-- Four core agile practices
+- **Four core agile practices**
 
 - The Agile development process 【L6p45】
 
@@ -414,7 +418,7 @@ Agile modeling and prototyping
 
 - Comparing agile modeling and structure methods
 
-- Strategies for improving efficiency 【L6p53】
+- Strategies for **improving efficiency** 【L6p53】
 
 - Risks when adopting new IS 【L6p55】
 
@@ -426,7 +430,7 @@ Using dataflow diagrams
 
 [Back to top](#系统分析与设计)
 
-- Tools for analyzing business 【L7p4】
+- **Tools for analyzing business** 【L7p4】
     - ...
     - Work flow diagram 【L7p10】
     - Data flow diagram 【L7p15】
@@ -451,13 +455,13 @@ Using dataflow diagrams
     - Diagram 0 【L7p32】
     - Child diagrams 【L7p36】
     - Checking for errors 【L7p39】
-    - Develop physical DFD from logical DFD 【L7p44】
+    - Develop **physical DFD** from **logical DFD** 【L7p44】
         - Features
         - Progression
         - Developing 【L7p48】
         - Event modeling and DFD 【L7p51】
         - Use cases and DFD 【L7p55】
-    - Partition physical diagrams 【L7p56】
+    - **Partition** physical diagrams 【L7p56】
         - Reasons
 
 - Example 【L7p59】
@@ -478,13 +482,14 @@ Analyzing Systems Using Data Dictionaries
 
 ### Data dictionary 【L8p10】
 
-- Need for data dictionary 【L8p11】
+- **Need for data dictionary** 【L8p11】
 
 - Data dictionary categories 【L8p15】
     - Data flows
     - Data structures 【L8p18】
         - Logical/Physical 【L8p24】
     - Elements 【L8p27】
+        - **Base or derived**
         - Aliases
         - Short description
         - Length
@@ -497,6 +502,9 @@ Analyzing Systems Using Data Dictionaries
 ### Data repository 【L8p13】
 
 ### Creating the data dictionary 【L8p47】
+
+- Data dictionary entries
+    - DFD完成后、或同时 create
 
 - Analyzing input and output
 
@@ -515,10 +523,11 @@ Process Specifications and Structured Decisions
 [Back to top](#系统分析与设计)
 
 - Logic of decisions 【L9p6】
+    - Structured/Semistructured decisions
 
 ### Process specifications 【L9p10】
 
-- Goals
+- **Goals**
 
 - Process specification are not created
 
@@ -617,7 +626,7 @@ Object Oriented Systems Analysis and Design Using UML
 
 - Packages 【L10p83】
 
-- Using UML 【L10p86】
+- **Using UML** 【L10p86】
 
 ---
 
@@ -631,7 +640,7 @@ Designing effective output
 
 - Output 【L11p9】
 
-- Output design objectives 【L11p13】
+- **Output design objectives** 【L11p13】
 
 ### Relating Output Content to Method 【L11p16】
 
@@ -650,7 +659,7 @@ Designing effective output
 
 - Factors to consider 【L11p34】
 
-### How output bias affect users
+### **How output bias affect users**
 
 - Output bias 【L11p36】
 
@@ -756,7 +765,7 @@ Designing databases
 
 ### Normalization 【L13p32】
 
-- 1NF, 2NF, 3NF
+- **1NF, 2NF, 3NF**
 
 ### Guidelines for Master File/Database Relation Design 【L13p40】
 
@@ -765,7 +774,7 @@ Designing databases
     - Referential integrity
     - Domain integrity
 
-- Anomolies 【L13p46】
+- **Anomolies** 【L13p46】
     - Data redundancy
     - Insert anomaly
     - Deletion anomaly
@@ -821,7 +830,7 @@ HCI
 
 - Interface design objectives 【L14p40】
 
-### Types of user interfaces 【L14p42】
+### **Types of user interfaces** 【L14p42】
 
 - ...
 
@@ -835,11 +844,11 @@ HCI
 
 ### Feedback for users
 
-- Types of feedback 【L14p65】
+- Types of **feedback** 【L14p65】
 
 - Help options
 
-### Special design consideration for E-commerce 【L14p69】
+### Special design consideration for **E-commerce** 【L14p69】
 
 - Soliciting feedback
 
@@ -849,9 +858,9 @@ HCI
 
 - Mashups 【L14p73】
 
-- Designing queries
+- **Designing queries**
     - Query types 【L14p75】
-    - Notation
+    - **Notation** 【L14p78】
     - Query methods 【L14p80】
     - SQL
 
@@ -865,7 +874,7 @@ Designing accurate data entry process
 
 ### Effective coding 【L15p8】
 
-- Human purposes for coding
+- **Human purposes for coding**
     - Keep track of something 【L15p10】
         - Simple sequence code
         - Alphabetic derivation codes
@@ -881,11 +890,11 @@ Designing accurate data entry process
     - Requests appropriate action 【L15p28】
         - Function codes
 
-- General guidelines for coding 【L15p31】
+- **General guidelines for coding** 【L15p31】
 
 ### Effective and efficient data capture 【L15p43】
 
-- Data capture
+- **Data capture**
     - Deciding what to capture
     - Letting the computer do the rest
     - Avoid bottlenecks and extra steps
@@ -893,7 +902,7 @@ Designing accurate data entry process
     - Choosing a data entry method 【L15p48】
         - ...
 
-### Ensuring data quality through input validation 【L15p58】
+### Ensuring data quality through **input validation** 【L15p58】
 
 - Validating input transactions/data 【L15p60】
 
@@ -930,7 +939,7 @@ Quality assurance and implementation
     - Partitioning
     - Modular design 【L16p33】
 
-- Structured charts 【L16p36】
+- **Structured charts** 【L16p36】
     - Drawing 【L16p46】
 
 - Service oriented architecture (SOA) 【L16p50】
@@ -971,10 +980,10 @@ Quality assurance and implementation
 
 ### System installation
 
-- Training 【L16p133】
+- **Training** 【L16p133】
     - Who, objectives, methods, ...
 
-- Conversion strategies 【L16p137】
+- **Conversion strategies** 【L16p137】
     - Direct changeover
     - Parallel conversion
     - Gradual or phased conversion
@@ -993,10 +1002,10 @@ Quality assurance and implementation
 
 - Auditing 【L16p191】
 
-- Disaster recovery planning 【L16p192】
+- **Disaster recovery planning** 【L16p192】
     - ...
 
-### Evaluation techniques 【L16p203】
+### **Evaluation techniques** 【L16p203】
 
 - IS utility approach
 
