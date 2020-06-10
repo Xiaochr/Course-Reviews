@@ -2,6 +2,10 @@
 
 只记考试范围内的。Prolog编程不考，神经网络不考。
 
+Slides 链接：[智能技术-2020春](https://cloud.tsinghua.edu.cn/f/6f13a15d62784782b148/)
+
+密码：artificial
+
 ## Predicate calculus
 
 - Knowledge 【L2-1p3】
