@@ -1,6 +1,10 @@
 # 计量经济学
 
-因为笔记写在笔记本上，所以这里只梳理要点。期中之后的内容：
+因为笔记写在笔记本上，所以这里只梳理期中之后的要点。
+
+Slides 链接：[计量经济学-2020春](https://cloud.tsinghua.edu.cn/f/1490bc5c4a3742398326/)
+
+密码：econometrics
 
 ## Instrumental variable regression
 

@@ -1,5 +1,9 @@
 # 商务数据分析
 
+Slides 链接：[商务数据分析-2020春](https://cloud.tsinghua.edu.cn/f/0ea1eaa9f30745b1809d/)
+
+密码：bdabdabda
+
 ## 商务数据分析的概念意义和作用
 
 - 商务数据分析的要素 【L1p9】

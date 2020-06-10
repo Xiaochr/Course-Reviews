@@ -2,6 +2,10 @@
 
 波波的屁屁踢给俺整吐了
 
+Slides 链接：[系统分析与设计-2020春](https://cloud.tsinghua.edu.cn/f/8423e71abe104952a736/)
+
+密码：sadsadsad
+
 ## Contents
 
 1. [Systems, Roles, and Development Methodologies](#Lecture1)
