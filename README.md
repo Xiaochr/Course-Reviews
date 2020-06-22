@@ -4,11 +4,7 @@
 
 太难了，救救孩子的期末吧 @_@
 
-6.3
-
-考试进程终于过半，AI、SAD、OR冲冲冲！
-
-6.7
+### 6.7
 
 To 智能技术：
 
@@ -18,9 +14,33 @@ To 智能技术：
 
 还把人变成智障
 
+### 6.22
+
+开始整理复习夏令营内容
+
 ---
 
 ## 目录
+
+### 夏令营复习
+
+- IS相关
+    - [数据库](2020-summer/Database.md)
+    - [数据结构](2020-summer/DSA.md)
+    - 管理信息系统
+    - ERP
+    - [系统分析与设计](2020-spring/SAD.md)
+    - 信息资源管理、人机接口设计
+
+- OM相关
+    - [运筹学](2020-summer/OM/OR.md)
+    - [动态](2020-summer/OM/Dynamic_systems.md)
+    - 生产与运作管理
+
+- 基础数学
+    - [概统](2020-summer/Math/Statistics.md)
+    - 微积分
+    - [线性代数](2020-summer/Math/Linear_algebra.md)
 
 ### 2020春
 
