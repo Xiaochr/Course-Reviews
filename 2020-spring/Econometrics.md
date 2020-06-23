@@ -2,9 +2,7 @@
 
 因为笔记写在笔记本上，所以这里只梳理期中之后的要点。
 
-Slides 链接：[计量经济学-2020春](https://cloud.tsinghua.edu.cn/f/1490bc5c4a3742398326/)
-
-密码：econometrics
+Slides Google Drive 链接：[计量经济学-2020春](https://drive.google.com/file/d/1vtulff_P_v-S6EQ3YEGsWs0lPBYlWyjP/view?usp=sharing)
 
 ## Instrumental variable regression
 

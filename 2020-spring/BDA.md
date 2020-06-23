@@ -1,8 +1,6 @@
 # 商务数据分析
 
-Slides 链接：[商务数据分析-2020春](https://cloud.tsinghua.edu.cn/f/0ea1eaa9f30745b1809d/)
-
-密码：bdabdabda
+Slides Google Drive 链接：[商务数据分析-2020春](https://drive.google.com/file/d/1T672ucfEMgoyDL7HkIHID7fNFdYXzJMl/view?usp=sharing)
 
 ## 商务数据分析的概念意义和作用
 
