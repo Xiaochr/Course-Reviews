@@ -2,7 +2,7 @@
 
 波波的屁屁踢给俺整吐了
 
-Slides Google Drive 链接：[系统分析与设计-2020春](https://drive.google.com/file/d/1ZViaBu9CrHkzdMkJPBHgQ92xJEVkShrC/view?usp=sharing)
+Slides Google Drive 链接：[系统分析与设计-2020春](https://drive.google.com/drive/folders/1GMCpQjXcWkQkl6UmiMXqzD1cVWiIklOe?usp=sharing)
 
 ## Contents
 

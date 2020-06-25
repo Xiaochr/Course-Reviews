@@ -1,6 +1,6 @@
 # 商务数据分析
 
-Slides Google Drive 链接：[商务数据分析-2020春](https://drive.google.com/file/d/1T672ucfEMgoyDL7HkIHID7fNFdYXzJMl/view?usp=sharing)
+Slides Google Drive 链接：[商务数据分析-2020春](https://drive.google.com/drive/folders/1WpbP31FQHkJ30uiFzWRMccGbDw_oI1Db?usp=sharing)
 
 ## 商务数据分析的概念意义和作用
 

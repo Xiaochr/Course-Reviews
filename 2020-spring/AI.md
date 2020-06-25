@@ -2,7 +2,7 @@
 
 只记考试范围内的。Prolog编程不考，神经网络不考。
 
-Slides Google Drive 链接：[智能技术-2020春](https://drive.google.com/file/d/11vMQWJdDA_QoHC7If0ZcdDVQ1ZtuKA_H/view?usp=sharing)
+Slides Google Drive 链接：[智能技术-2020春](https://drive.google.com/drive/folders/1XzRjCxQk5NUCTm--DPcmiRDRP7dSbk5z?usp=sharing)
 
 ## Predicate calculus
 
