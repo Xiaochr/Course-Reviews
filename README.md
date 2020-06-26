@@ -31,7 +31,7 @@ To 智能技术：
     - [系统分析与设计](2020-spring/SAD.md)
     - ERP
     - [信息资源管理](2020-summer/IS/IRM.md)
-    - 人机接口设计
+    - [人机接口设计](2020-summer/IS/HCI.md)
 
 - OM相关
     - [运筹学](2020-summer/OM/OR.md)
