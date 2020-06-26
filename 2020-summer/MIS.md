@@ -40,11 +40,11 @@
 
 - Value chain
 
-- MRP, MRP2, ERP, VCRP
+- MRP(material requirements), MRP2(manufacturing resource), ERP, VCRP
     - 前三个是internal value chain，最后一个是external
 
 - SCM and ERP
-    - Material requisition 物料需求管理
+    - Material requirements 物料需求管理
     - Production resource 生产资源管理
     - Enterprise resource 企业资源管理
     - External supply chain 供应链管理
