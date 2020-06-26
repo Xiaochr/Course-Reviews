@@ -2,7 +2,7 @@
 
 开卷考试的快速搜索笔记
 
-课件及平时作业题目 Google Drive 链接：[人机接口设计-2019春](https://drive.google.com/drive/folders/1GIAKjm9croyZA-FFjtVJwip9hjhSz1pe?usp=sharing)
+课件、平时作业及大作业题目 Google Drive 链接：[人机接口设计-2019春](https://drive.google.com/drive/folders/1GIAKjm9croyZA-FFjtVJwip9hjhSz1pe?usp=sharing)
 
 ---
 

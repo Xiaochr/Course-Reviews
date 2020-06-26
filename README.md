@@ -29,7 +29,7 @@ To 智能技术：
     - [数据结构](2020-summer/DSA.md)
     - [管理信息系统](2020-summer/MIS.md)
     - [系统分析与设计](2020-spring/SAD.md)
-    - ERP
+    - [ERP](2020-summer/IS/ERP.md)
     - [信息资源管理](2020-summer/IS/IRM.md)
     - [人机接口设计](2020-summer/IS/HCI.md)
 
