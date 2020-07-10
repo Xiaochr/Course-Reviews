@@ -187,8 +187,47 @@ The P-value is the smallest significance level $\alpha$ at which the null hypoth
 
 ## ANOVA
 
+### Single factor ANOVA
+
+- Notations
+    - The treatment sum of squares: SSTr
+    - Error sum of squares: SSE
+    - Mean square for treatments: MSTr
+    - Mean square for error: MSE
+    - SST = SSTr + SSE
+
+- F-test
+    - F = MSTr/MSE
+    - $H_0$: $\mu$都相等
+    - 如果$\mu$差别不大，F值接近1；如果$\mu$差别很大，则F值应远大于1。
+
+- ANOVA table
+
+- Multiple comparisons in ANOVA
+    - Tukey's procedure
+    - 画横线
+
+### Two-factor ANOVA
+
+- Notations
+    - SST
+    - SSA
+    - SSB
+    - SSE
+
 # Linear Regression
 
+...
+
+# Goodness-of-Fit Tests
+
+- GOF
+    - observed
+    - expected
+
+$$\chi^2 = \sum \frac{(\text{observed} - \text{expected})^2}{\text{expected}}$$
+
+- Contingency tables
 
 ---
 
