@@ -123,5 +123,16 @@ Author: Dr. Viswanath Venkatesh
 
 - Networking. 与学院的老师们交流，向他们介绍自己，有机会时寻求帮助和合作。与同辈、师兄师姐交流，找到可以一起讨论、合作的。要有准备地 networking。
 
+---
 
+
+## Section 1: Research
+
+### Chapter 2: Building and sustaining a research program
+
+- Scoped down. 
+
+- Maintaining a solid pipeline is essential to building and sustaining a research program. Keep a steady stream of publications flowing. 
+
+- 同时做2至3个 well-defined 项目即可，不宜太多。
 
