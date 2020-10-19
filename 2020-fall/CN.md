@@ -66,6 +66,7 @@
 
 - Simplified file transfer architecture
 
+---
 
 ## 2. Network architecture
 
@@ -137,6 +138,7 @@
 
 - Further notes about socket API 【s2 p37】
 
+---
 
 ## 3. Direct connection
 
@@ -210,12 +212,18 @@
         - Sender window size (SWS): Delay $\times$ Bandwidth product. 
         - Receiver window size (RWS): = 1 or = SWS
 
+---
 
-## Direct link networks
+## 4. Direct link networks
 
 - Ethernet, Token rings, Wireless 【s4 p4】
 
 - IEEE 802.x specifications 【s4 p6】
+
+- Media Access Control (MAC)
+    - Ethernet: CSMA/CD
+    - Token ring
+    - Wireless: CSMA/CA
 
 ### Ethernet
 
@@ -282,13 +290,258 @@
     - The exposed node problem
     - Solution: Multiple Access with Collision Avoidance (MACA) 【s4 p39】
 
+---
+
+## 5. Packet switching
+
+- Problems of direct link networks 【s5 p5】
+    - limitation: scalability
+    - key problem: inter-connecting networks
+    - solution: packet switching
+
+### Inter-networking
+
+- General working mechanism: switching and forwarding
+
+- Inter-connecting links of the same type: Bridges/LAN switches
+
+- Inter-connecting links of different types: Gateways/routers, the Internet Protocol
+
+### Switching and forwarding
+
+- Ethernet 【s5 p9】
+    - shared medium: Bus
+    - Hub
+
+- Switched LAN
+    - 用的是 switch 而不是 Hub
+    - NO shared medium
+    - no direct link between hosts. 因为switch算是一台电脑
+    - 现在实际上只用 switch 而不用 hub 了，因为成本也不高。
+
+- Switch
+    - Each one runs a **data-link protocol**. 
+    - Each input or output is a port (interface). 这里的port指的是物理意义上的接口，而不是数字。
+    - Layer 3 switch (**router**): links may run different data link protocols
+    
+- Hub, Switch/Bridge, and Router/Gateway 【s5 p13~14】
+
+#### How does a switch decide what output port to use?
+
+- Datagrams
+    - connectionless
+    - forwarding table
+    - For connectionless networks 【s5 p17】
+        - routing is important
+        - it is not known whether the network can deliver the packet
+
+- Virtual circuit 【s5 p18】
+    - connection-oriented
+    - Two part process:
+        - connection setup
+        - data transfer
+    - virtual circuit table
+    - connection establishment 【s5 p20】
+        - Permanent Virtual Circuit (PVC)
+        - Switched Virtual Circuit (SVC)
+    - Typical virtual circuit networks
+        - Frame relay (support VPN)
+        - Asynchronous transfer mode (ATM)
+
+- Source routing 【s5 p22】
+
+
+### Bridges/LAN Switches 【s5 p24】
+
+- LAN Bridge operation
+
+- Learn table entries based on source address. 
+    - 一开始是空表，例如A从p1来，就知道它在p1，此时broadcast，因为不知道目标在哪，如此反复直到填出全表。
+
+- Extended LANs can have loops
+    - solution: minimum spanning tree
+
+- Limitations 【s5 p30】
+    - do not scale
+    - do not accommodate heterogeneity
+
+---
+
+## 6. Basic internetworking
+
+### The network layer
+
+- Connecting heterogeneous networks 【s6 p8】
+    - requirements 【s6 p6】
+    - Router/Gateway
+
+- Key functions of the network layer 【s6 p12】
+    - global addressing
+    - data conversion
+    - fragmentation
+    - routing
+
+### The Internet Protocol (IP) 【s6 p14】
+
+- IP datagram delivery 【s6 p18】
+    - connectionless
+    - Best-effort （尽力而为）
+        - unreliable service
+
+- Packet format
+
+- Datagram size
+    - Maximum Transmission Unit (MTU)
+    - How to choose the max datagram size for IP?
+        - fragment IP datagram into multiple MTUs
+
+- Fragmentation and assembly 【s6 p21】
+
+### Address and datagram forwarding
+
+- IP addressing
+    - independent of MAC addressing
+    - used by: higher layer protocols, applications
+    - virtual
+    - 32-bit (IPv4)
+    - unique value for each host/interface
+        - prefix identifies the network (assigned by global authority), suffix identifies the host/interface (assigned by local administrator). 【s6 p28】
+
+- Dotted decimal notation
+    - 4 decimal values per 32-bit address
+    - each number represents 8 bits, the value is between 0 and 255. 
+
+- Classes of IP addresses 【s6 p30】
+    - class A: large networks, host 24
+    - class B: medium, host 16
+    - class C: small, host 8
+
+- Special address
+    - 0, booting
+    - 255, broadcast
+
+- Router addresses
+    - need one address per router connection
+
+- Datagram forwarding/routing
+    - next hop
+
+- Subnetting 【s6 p38】
+    - subnet masks 分割，后面为0的部分为host可以使用的位置。
+
+---
+
+## 7. IP related protocols
+
+- Address translation (ARP)
+
+- Host configuration (DHCP)
+
+- Error reporting (ICMP)
+
+- Virtual networks and tunnels
+
+### ARP
+
+- Address translation 【s7 p7】
+    - map IP address into physical (MAC) addresses
+    - ARP (Address Resolution Protocol)
+
+- ARP 【s7 p8】
+    - ARP Request: who has this IP address?
+    - ARP Reply: I have xxx. My MAC address is xxx.
+    - Reverse ARP Request (RARP): who has this MAC address?
+    - RARP Reply: I have the MAC. My IP address is xxx. 
+
+- ARP details 【s7 p11】
+
+- ARP spoofing attacks 【s7 p16】
+    - Denial of Service (DoS)
+    - Man in the middle
+    - MAC flooding
+    - mitigating factor
+        - only local attackers can exploit ARP's insecurities
+    - How to prevent? 【s7 p20】
+        - cannot be completely fixed
+
+### Host configuration (DHCP)
+
+- Dynamic Host Configuration Protocol (DHCP) 【s7 p22】
+    - IP addresses bound to workstations dynamically
+    - Benefits and limitations 【s7 p28】
+
+### Error reporting (ICMP)
+
+- Internet Control Message Protocol (ICMP) 【s7 p31】
+    - Route test
+        - Echo (ping), trace route
+    - Error reporting
+    - Redirect
+
+### Virtual networks and channels
+
+- Private networks 【s7 p35】
+
+- Virtual Private Networks (VPN)
+    - sharing some of the same physical links, but make it private. 因为单独买physical的线太贵了……
+    - 在R1信息加密（包括地址也加密，别人拿到也看不懂），传到R2解密，然后再按地址传。（于是就可以躲过某些地址筛查）
+
+---
+
+## 8. Routing and the global Internet
+
+### Distance vector routing
+
+- Routing table
+
+- Network as a graph
+    - all-pairs shortest path problem
+
+- Static solution 【s8 p9】
+    - problem
+
+- Distance vector routing 【s8 p11】
+    - algorithm 【s8 p13】
+    - deal with link failures 【s8 p15】
+        - Periodic updates
+        - Triggered updates
+    - count-to-infinity problem (2-node loops)
+        - solution 【s8 p18】
+    - Routing Information Protocol (RIP) 【s8 p19】
+
+### Link state routing 【s8 p21】
+
+- spread the local knowledge of each node to all other nodes in the network, so that every node can construct a network weighted graph
+
+- Strategy 【s8 p22】
+    - send to all nodes (not just neighbors) information about directly connected links (not entire routing table)
+    - Link State Packet (LSP)
+
+- Link state routing mechanism
+    - reliable flooding 【s8 p24】
+    - Dijkstra
+
+- Properties 【s8 p26】
+
+- Open Shortest Path First Protocol (OSPF)
+
+### Global Internet
+
+- Multi-backbone Internet 【s8 p30】
+    - challenges 【s8 p32】
+
+- Related topics 【s8 p33】
+    - Subnetting
+    - Network address translation (NAT) 【s8 p35】
+    - IPv6 【s8 p37】
+        - 128-bit addresses
+        - notation 【s8 p38】
+        - address space allocation
+        - packet format
 
 
 
-
-
-
-
+---
 
 ## Questions
 
@@ -313,4 +566,28 @@
 - Why might a mesh (ad-hoc) topology be superior to a base station topology for communication in a natural disaster?
 
 - How can an ethernet communicate with an FDDI network?
+
+### s5
+
+- What are the advantages and disadvantages of datagram switching?
+
+- What are the advantages and disadvantages of virtual circuit switching?
+
+- How can broadcast and multicast of messages be implemented in the extended LAN (connected with bridges)?
+
+- What is ATM? What do you think about the future of ATM?
+
+- How can an ethernet communicate with an FDDI network?
+
+### s6
+
+- Why is IP able to connect various link technologies to form a larger internetwork?
+
+- What aspect of IP addresses makes it necessary to have one address per network interface, rather than just one per host?
+
+### s8
+
+- What are the differences between distance vector and link state routing approaches?
+
+- What are the limitations of the Network Layer?
 
