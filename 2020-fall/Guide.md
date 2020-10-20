@@ -136,3 +136,118 @@ Author: Dr. Viswanath Venkatesh
 
 - 同时做2至3个 well-defined 项目即可，不宜太多。
 
+- Carefully articulate a few specific questions early in one's research career and to pursue those questions. 
+    - trying answer the questions
+    - investing time in reading and tracking the relevant literature in different fields that addresses those questions. 
+    - 可以稍微宽泛一些，有适应性，不太会过时的。这些问题也会随着时间而evolve。
+
+- 博士的dissertation好好做，从中抽出来发paper，不要半途而废，不然相当于放弃了多年在一个领域内的努力、所花的大量时间精力，放弃了一条 productive stream。
+
+- It will be nice to leverage your knowledge in a stream to a second stream in order to be more efficient. 
+    - 选topic和theory比较类似的
+
+- 看看新项目是否与自己的研究框架相符，再决定是否参加。
+
+- Research project vs Research study
+    - project的范围更大，可以包含多个study。study更narrow
+
+- Data collection很重要，最好是一次收集够多篇paper的，but how do you know what data to collect?
+    - delve into related concepts, competing theories, and higher- or lower-level concepts and constructs. 
+
+- Populate your pipeline
+    - 不要发完一篇paper后就断了，不知道该干啥了，此时应该要有一个已经做完数据分析的研究来继续写。a steady flowing stream
+
+- Plan, plan, plan!
+
+
+### Chapter 4: Writing a paper
+
+Focuses on writing empirical articles for journals in the social and behavioural sciences. 
+
+期刊与期刊之间的要求不同，it is important to read the editorial statements of sitting editors and to look at recent published papers to understand the current idiosyncrasies of the journal. 
+
+- Paper 被拒的原因
+    - Lack of solid theoretical contribution. The topic is uninteresting, the model is inadequate, the empirical study is poor. 
+
+Five strategies:
+
+#### 1. Framing and telling an interesting story
+
+- 审稿人如果看了前几页觉得不喜欢，就会有挑错的心理；如果看了觉得喜欢这个idea，就更倾向于寻找改进paper的方法。
+
+#### 2. Fishing
+
+- Avoid data fishing. 
+    - Fishing: a dataset is analyzed in an exploratory fashion without a priori theoretical expectations of possible patterns or causal relationships. 
+
+- 写文章的顺序并不是按照paper里的那种，而是 iteration of ideas, theory development and data/results. 不断涌现的有趣的结果能帮助你更好地 tell a good story. 
+    - There is a fine line between fising and iteration. 并不总是要先提出一个theory，有时候可以让 data speak. 
+
+- **Scientific integrity does not require you to lead your readers through all your wrongheaded hunches only to show they were wrongheaded**. 
+
+#### 3. Writing and thinking
+
+- 写作很重要很重要！
+
+#### 4. Outline of a paper
+
+- 用slides或传统的outline 
+
+- 通过用不同形式的outline，尝试不同story line，pick the most compelling one
+
+- Outline example
+    - Abstract
+    - Introduction
+        - Business problem and significance
+        - Theoretical problem and significance
+        - Objectives
+        - Expected contributions
+    - Literature review/Background
+    - Theory/Hypothesis development
+    - Method
+    - Results
+    - Discussion
+        - Summary
+        - Theoretical contributions
+        - Theoretical implications
+        - Limitations
+        - Practical implications
+    - Conclusions
+
+#### 5. Hat trick
+
+- Being able to switch between the "author hat" and the "reader hat". A hard but vital skill. 
+    - stop writing for yourself and start writing for your readers
+
+- 让同事、同学、老师帮忙读。或者先放一两周，自己回过头来读。
+
+
+### Chapter 7: Building and managing collaborations
+
+- Five reasons to collaborate
+    - creates efficiency gains
+    - leverages complementarities
+    - whole can be greater than the sum of the parts
+    - creates an environment for lifelong learning
+    - provides a support group
+
+- Five reasons NOT to collaborate
+    - flying solo is important
+    - coordination costs are high
+    - leads to the blame game
+    - ruins relationships
+    - having to reconcile work styles
+
+- Five rules of collaboration
+    - Ensure motivational alignment
+    - Ensure rank alignment
+    - Be mindful of your strengths and weaknesses
+    - Always mis business and pleauser
+    - Keep the number of collaborators manageable
+
+
+---
+
+书中其他部分暂时应该帮不到我，先告一段落吧。
+
+End
