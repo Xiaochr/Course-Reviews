@@ -540,6 +540,119 @@
         - packet format
 
 
+---
+
+## 9. End to End Protocols
+
+### Transport protocols 【s9 p6】
+
+- Provide application-to-application (process-to-process) communication. Called "end-to-end"
+
+- Optionally provide:
+    - Reliability, Flow control, Congestion control
+
+- End to end protocols
+    - Simple demultiplexer (UDP)
+    - Reliable byte stream (TCP)
+
+### UDP
+
+- User Datagram Protocol 【s9 p9】
+    - **Unreliable** message delivery
+    - Connectionless
+    - No flow control
+    - No error recovery (**no ACKs**)
+    - Application multiplexing
+
+- Addresses for applications: protocol ports 【s9 p11】
+    - server: lower port numbers
+    - client: higher port numbers
+
+- Simple asynchronous demultiplexing 【s9 p13】
+
+- Basic firewalls 【s9 p16】
+
+### TCP
+
+- Transmission Control Protocol 【s9 p18】
+    - Most popular layer 4 protocol
+    - Connection-oriented protocol
+
+- TCP feature summary
+    - provides a stream transport service
+    - allows two application programs to...
+
+- Reliable byte stream 【s9 p20】
+    - reliable, in-order delivery
+
+- Segment format 【s9 p21】
+
+- An apprent contradiction?  【s9 p22】
+    - IP and TCP
+    - How is this possible? ACK mechanism. 
+
+- Achieving reliability
+    - reliable connection setup
+        - must be reliable
+    - reliable data transmission
+    - reliable connection shutdown
+        - must be graceful
+
+- Why startup/shutdown is difficult? 【s9 p25】
+
+- TCP Startup solution: **3-way handshake** 【s9 p26】
+    - use three-message exchange
+    - SYN, SYN+ACK, ACK
+    - Segments are labeled with a **sequence number**. 【s9 p29】
+        - Protect from out-of-order delivery. 
+        - Initial Sequence Numbers (ISN)
+
+- TCP Shutdown: **四次挥手** 【s9 p30】
+
+- Reliable data transmission 【s9 p31】
+    - Guarantees a reliable delivery of data: **ARQ**
+    - Ensures that data is delivered in order: **SeqNum**
+    - Enforces flow-control between sender and receiver: **Sliding window**
+
+- Reliable delivery of data
+    - Positive Acknowledgement
+    - **Retransmission** 【s9 p33】
+
+- Retransmission
+    - Problem: how long should wait?
+        - distance to destination, current traffic condition. 在TCP层面上，不知道中间的路是怎样的（不像data link layer）
+    - Solution: **adaptive retransmission**
+        - User current estimate to set retransmission timer
+        - $\text{EstimatedRTT} = \alpha \text{EstimatedRTT} + (1-\alpha) \text{SampleRTT}$
+        - $\text{TimeOut = 2 \times \text{EstimatedRTT}}$
+        - 这里的SampleRTT指的是最近一次检测到的数据
+
+- Pipeline operation
+    - 由 **receiver** 决定 window size
+
+- TCP flow control 【s9 p38】
+    - sliding window protocol
+    - receiver: **advertise availble buffer space**
+    - sender: can send up to entire window before ACK arrives
+
+- Window advertisement 【s9 p40】
+    - Each acknowledgement carries new window information
+
+- Sliding window 【s9 p41】
+    - Sending side: buffer bytes between LastByteAcked and LastByteWritten
+    - Receiving side: buffer bytes between LastByteRead and LastByteRcvd
+
+- Flow control 【s9 p42】
+    - Receiving side
+    - Sending side
+
+
+
+
+
+
+
+
 
 ---
 
