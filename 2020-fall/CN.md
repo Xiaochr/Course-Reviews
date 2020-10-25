@@ -647,6 +647,71 @@
     - Sending side
 
 
+---
+
+## 10. End-to-End Data
+
+- End-to-End data
+    - Presentation formatting
+    - Markup language (XML)
+    - Multimedia data
+
+### Presentation formatting
+
+- Problem 【s10 p7】
+    - at the transport layer (TCP/UDP), a message is sent as an uninterpreted string of bytes. 
+    - How to encode the different kinds of data into byte strings?
+
+- Encoding/Decoding
+
+- Byte order: big-/little-endian
+
+- Data types
+
+- Formatting approaches 【s10 p11】
+    - Argument mashalling（参数编组）
+        - Remote Procedure Call (**RPC**) 【s10 p12】
+    - Markup documents
+
+### Markup languages
+
+- XML 【s10 p19】
+
+- Difference between XML and HTML 【s10 p22】
+    - XML is designed to carry data, not to display data
+    - HTML is designed to display data
+
+- Flexibility of XML 【s10 p23】
+
+- XML element, prolog, syntax, tree
+
+- Displaying XML 【s10 p28】
+    - CSS
+    - **XSL** (eXtensible Stylesheet Language) preferred!
+
+- XML validation 【s10 p32】
+    - DTD (Document Type Definition)
+
+- JSON
+    - a lightweight data-interchange format
+
+- YAML (Yet Another Markup Language)
+
+- Application of XML
+    - From HTML to XHTML
+    - General document formats
+        - docx
+    - MathML
+    - SVG
+    - Synchronized Multimedia Integration Language (SMIL)
+    - RSS (Really Simple Syndication)
+
+### Multimedia data
+
+- Compression methods 【s10 p53】
+    - Image compression: JPEG
+    - Video compression: MPEG
+
 
 
 
