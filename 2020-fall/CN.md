@@ -708,9 +708,62 @@
 
 ### Multimedia data
 
+- The amount of data is very large
+
 - Compression methods 【s10 p53】
     - Image compression: JPEG
+        - 记一次颜色，然后标出哪些坐标对应哪些颜色
     - Video compression: MPEG
+        - I frames (intrapicture): self-contained, 保存完整的图片
+        - P frames (predicted picture): depending on earlier I frames, 只存储不同之处
+        - B frames (bidirectional predicted picture): depending on earlier and later frames (可以是I也可以是P)
+
+
+---
+
+
+## 11. Applications: World Wide Web
+
+- Separation of duties 【s11 p4】
+    - network
+    - application
+
+- Typical application protocols 【s11 p7】
+    - HTTP (WWW)
+    - FTP (file transfer)
+    - SMTP, POP, IMAP (emails)
+    - SSH, Telnet (remote shell)
+    - RDP, VNC (remote desktop)
+
+### World Wide Web (HTTP)
+
+- HTML (HyperText Markup Language) 【s11 p11】
+
+- URL (Uniform Resource Locater) 【s11 p12】
+
+- URL and MIME types 【s11 p15】
+
+- HTTP (HyperText Transfer Protocol) 【s11 p16】
+    - default server port: 80
+    - HTTP request message 【s11 p18】
+    - HTTP request methods 【s11 p21】
+    - HTTP response codes 【s11 p23】
+
+- HTTPS 【s11 p25】
+
+- Cookies 【s11 p26】
+    - to identify the client
+    - private mode
+
+- Documents 【s11 p28】
+    - Static: fast, but not customized
+    - Dynamic: slower, but more flexible
+
+
+
+
+
+
 
 
 
@@ -768,4 +821,14 @@
 - What are the differences between distance vector and link state routing approaches?
 
 - What are the limitations of the Network Layer?
+
+
+### s11
+
+- Why the client's port numbers are different but the server's are the same? 【s11 p6】
+
+
+
+
+
 
