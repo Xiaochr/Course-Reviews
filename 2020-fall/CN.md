@@ -759,8 +759,74 @@
     - Static: fast, but not customized
     - Dynamic: slower, but more flexible
 
+- Client side elements
+    - HTML5
+
+- AJAX (Asynchronous Javascript and XML)
+
+- Web services: XML + HTTP 【s11 p31】
+    - XML-RPC
+    - example: Google search API
+
+- HTTP server operation
+
+- Multi-tier servers
+
+- Browser operation 【s11 p37】
+    - browser kernels (layout engines)
 
 
+---
+
+
+## 12. Applications: DNS and Email
+
+### Domain name service (DNS)
+
+- DNS functionality 【s12 p5】
+    - given name of a computer, return computer's IP address
+    - Example 【s12 p6】
+
+- Configure of the network connection
+    - IP address
+    - netmasks
+    - gateway
+    - name server
+
+- Domain name syntax 【s12 p7】
+    - DNS: domain name $\rightarrow$ IP address
+    - ARP: IP address $\rightarrow$ MAC address
+
+- Top-level domains
+
+- DNS client/server interaction 【s12 p14】
+    - client known as resolver
+
+- Name resolution 【s12 p15】
+    - local name server不需要知道全世界所有的name所对应的IP地址，按照图中的顺序问就行，问过的存为cache，更快。
+
+- Root servers 【s12 p18】
+    - 13 root name servers
+    - multiple server hosts
+        - load balancing 【s12 p20】
+        - content distribution
+
+- Global server load balancing (GSLB) 【s12 p22】
+
+### Internet Email (SMTP, POP, IMAP)
+
+- Internet Email 【s12 p28】
+    - Email address
+    - Mail message format
+
+- MIME (Multi-purpose Internet Mail Exchange) 【s12 p29】
+    - sender inserts additional header lines to indicate the encoding method
+
+- MIME encoding
+    - quoted-printable
+    - base64
+
+- SMTP (Simple Mail Transfer Protocol) 【s12 p34】
 
 
 
@@ -827,7 +893,14 @@
 
 - Why the client's port numbers are different but the server's are the same? 【s11 p6】
 
+- What made WWW so successful?
 
+- Why does HTTP run over TCP (rather than UDP)?
+
+
+### s12
+
+- Is is possible to map multiple domain names to one IP address? If yes, what kind of problems should be addressed?
 
 
 
