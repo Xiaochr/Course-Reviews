@@ -177,6 +177,9 @@
 
 #### Connecting hardware
 
+- Access technologies 【s3 p17】
+    - Fiber, cable, Wi-Fi, cellular
+
 - Node architecture, network adapter, links 【s3 p18~p20】
 
 - Typical cables 【s3 p22】
@@ -298,6 +301,10 @@
     - limitation: scalability
     - key problem: inter-connecting networks
     - solution: packet switching
+
+- Packet switching
+    - connection-oriented (switched WAN, Frame-Relay, ATM)
+    - connectionless = datagram switching
 
 ### Inter-networking
 
@@ -845,42 +852,83 @@
 ### s1
 
 - What is packet switching? What are the advantages of packet switching?
+    - Packet Switching transmits data across digital networks by breaking it down into blocks or packets for more efficient transfer using various network devices. Each time one device sends a file to another, it breaks the file down into packets so that it can determine the most efficient route for sending the data across the network at that time. The network devices can then route the packets to the destination where the receiving device reassembles them for use.
+
+- What is layering?
+    - Layering is the practice of arranging functionality of components in a system in a hierarchical manner such that lower layers provide functions and services that support the functions and services of higher layers. The end user in a layered system interacts only with the top-most layer. The lowest layer typically interacts with physical world to perform the task requested by the end user.
 
 - Why is layering useful?
+    - Using layering means using abstractions to hide the complexity of the computer networks. Keep networks simple. 
+    - Layering is useful in computer networking because it provides an effective way to organize all the functionality required for data communication. Each layer is responsible for a specific function in data communication and developers of each layer of the software can focus on improving how that specific functionality is delivered.
+    - A side benefit of layering is that it enables up gradation of each layer independently of other layers. For example, you can upgrade a version of your web browser or switch to a different web browser without changing any other network software. You can also easily move between wired and wireless computer networks without changing browsers or email clients. Again, this is possible because the network access functionality is defined in a layer independent of the application layer.
+
+- What are the primary functions of each layer?
+    - Application layer: commands to support common end user network needs
+    - Transport layer: reliable end-to-end data delivery
+    - Network layer: routing and network addressing
+    - Data-link layer: error-free transmission over 1 link
+    - Physical layer: converts data to signals for transmission over physical media
+
+
 
 ### s3
 
 - If you want to connect your home to the Internet, what are the common access technologies available for you to choose from?
+    - Fiber, cable, Wi-Fi, Cellular...
 
 - Why is the sliding window transmission “reliable”?
+    - reliability: delivery, order.
+    - The key idea is to limit the amount of packets that can be sent ahead of an acknowledgment. So for a Window Size of W, the transmitter is limited to send up to W packets before it needs to wait for acknowledgments.
+    - In addition, the Sliding Window acts as a simple flow control and prevents network overload by bounding the number of packages sent. Although that is not the main motivation for this modification.
 
 - Why should the sender window size (SWS) be set to bandwidth*delay product estimate?
+    - To maximize the utilization (troughput). The throughput that this protocol achieves depends on the window size
 
 ### s4
 
 - Why is Ethernet more popular than Token Ring in LANs?
+    - Ethernet is simpler and less costly. 
+
+- Differences between Ethernet and Token Ring.
+    - Token Ring: In the token ring a token ring passes over a physical ring. Token ring is defined by IEEE 802.5 standard. In token ring, there is a station and a special frame called token. A station in token ring can transmit data frame if it contains a token. After the successful transmission of data frame token are pointed(issued). Token ring is a Star shaped topology and handles priority in which some nodes may give priority to the token.
+    - Ethernet: IEEE 802.3 defines the Ethernet. It uses CSMA/CD mechanism. It means that if many stations exist at the same time to talk, all stations will be closed. To resume them, wait for a random time. Unlike token ring it doesn’t employ any priorities. And it is less costly than token ring network.
 
 - Why might a mesh (ad-hoc) topology be superior to a base station topology for communication in a natural disaster?
+    - Because the mesh structure is easier to deploy and has better performance in changing environments. 
 
 - How can an ethernet communicate with an FDDI network?
+    - Inter-connecting links of different types: Gateways/routers, the Internet Protocol
+    - Connecting heterogeneous networks 【s6 p8】
 
 ### s5
 
 - What are the advantages and disadvantages of datagram switching?
+    - connectionless networks 【s5 p17】
+    - Ads: No connection establishment required. A switch or link failure is no big deal. 
+    - Disads: When a packet is sent, it is not known whether the network can deliver it (reliabel transmission is not guaranteed). Each packet is forwarded independently. 
 
 - What are the advantages and disadvantages of virtual circuit switching?
+    - Ads: Data are delivered in order. Reliable. Packets don't contain destination address and hence headers are very small. 
+    - Disads: If one of the device does not work properly or fails, the complete connections are lost. In case of crises, it won't be able to handle a lot of traffic. Load is not distributed in the network, some routers may be overused, while others unused. 
 
 - How can broadcast and multicast of messages be implemented in the extended LAN (connected with bridges)?
+    - Broadcast is simple—each bridge forwards a frame with a destination broadcast address out on each active (selected) port other than the one on which the frame was received.
+    - Multicast can be implemented in exactly the same way, with each host deciding for itself whether or not to accept the message. This is exactly what is done in practice.
 
 - What is ATM? What do you think about the future of ATM?
+    - Asynchronous transfer mode (ATM) is a switching technique used by telecommunication networks that uses asynchronous time-division multiplexing to encode data into small, fixed-sized cells.
+    - This is different from Ethernet or internet, which use variable packet sizes for data or frames. ATM is the core protocol used over the synchronous optical network (SONET) backbone of the integrated digital services network (ISDN). 
+    - An ATM network is less adaptable to a sudden network traffic surge.
+    - The ATM provides data link layer services that run on the OSI's Layer 1 physical links. It functions much like small-packet switched and circuit-switched networks, which makes it ideal for real-rime, low-latency data such as VoIP and video, as well as for high-throughput data traffic like file transfers.
+    - ATM is a core protocol used in the SONET/SDH backbone of the public switched telephone network (PSTN) and in the Integrated Services Digital Network (ISDN), but has largely been superseded in favor of next-generation networks based on Internet Protocol (IP) technology, while wireless and mobile ATM never established a significant foothold.
 
-- How can an ethernet communicate with an FDDI network?
 
 ### s6
 
 - Why is IP able to connect various link technologies to form a larger internetwork?
 
 - What aspect of IP addresses makes it necessary to have one address per network interface, rather than just one per host?
+
 
 ### s8
 
