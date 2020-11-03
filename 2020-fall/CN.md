@@ -928,13 +928,17 @@
 - Why is IP able to connect various link technologies to form a larger internetwork?
 
 - What aspect of IP addresses makes it necessary to have one address per network interface, rather than just one per host?
+    - IP addresses include the network/subnet, so that interfaces on different networks must have different network portions of the address. Alternatively, addresses include location information and different interfaces are at different locations, topologically. 
+    - Point-to-point interfaces can be assigned a duplicate address (or no address), because the other endpoint of the link doesn't use the address to reach the interface; it just sends. Such interfaces, however, cannot be addressed by any other host in the network. 
 
 
 ### s8
 
 - What are the differences between distance vector and link state routing approaches?
+    - See the picture in word file. 
 
 - What are the limitations of the Network Layer?
+    - See word. 
 
 
 ### s11
@@ -944,6 +948,15 @@
 - What made WWW so successful?
 
 - Why does HTTP run over TCP (rather than UDP)?
+    - HTTP, FTP, SMTP and POP3 being application layer (layer 7) protocols can run on any of the underlying protocols, be it TCP/IP, IPX/SPX, UDP, or even on FCP.
+    - TCP is the most sought after transmission protocol due it’s reliability and ubiquity, such that it has now become the underlying protocol for almost all network transmissions. UDP being a connectionless transport protocol, there can be no guarantee of reliable data transmission.
+    - Because TCP is more reliable, and HTTP, FTP, SMTP, and POP3cannot be affordableusing UDP while UDP cannot transmit packet and guarantee a well order delivery. TCP is aconnected-oriented network so packet will be delivered to the destination.
+
+- Why do HTTP, FTP, SMTP and POP3 run on top of TCP rather than UDP? from chegg.com
+    - The protocols (HTTP...) require the application data to be received without any gaps in the **correct order**. 
+    - The TCP is more **reliable** than the UDP because TCP is a **connected-oriented network** where there is a guarantee of the transmitted packet in reaching the destination. 
+    - UDP sends only the datagram and it does not stand in managing retransmission, data sequencing or the connection. 
+    - Here, to run on their data and for assured delivery, all the data streams want the reliable protocol. The packet loss or failure during the transmission cannot be decided in the UDP protocol. 
 
 
 ### s12
