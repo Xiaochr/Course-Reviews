@@ -631,7 +631,7 @@
     - Solution: **adaptive retransmission**
         - User current estimate to set retransmission timer
         - $\text{EstimatedRTT} = \alpha \text{EstimatedRTT} + (1-\alpha) \text{SampleRTT}$
-        - $\text{TimeOut = 2 \times \text{EstimatedRTT}}$
+        - $\text{TimeOut} = 2 \times \text{EstimatedRTT}$
         - 这里的SampleRTT指的是最近一次检测到的数据
 
 - Pipeline operation
@@ -988,6 +988,9 @@
 
 ### s3
 
+- What is the significance of the delay × bandwidth product?
+    - The delay × bandwidth product is important to know when constructing high-performance networks because it corresponds to the amount of data the sender can send out before receiving a response. 
+
 - If you want to connect your home to the Internet, what are the common access technologies available for you to choose from?
     - Fiber, cable, Wi-Fi, Cellular...
 
@@ -1003,6 +1006,9 @@
 
 - Why is Ethernet more popular than Token Ring in LANs?
     - Ethernet is simpler and less costly. 
+    - Ethernet was the first widely deployed high-speed LAN. Therefore,network administrators were reluctant to switch over to other LAN technologies.
+    - Ethernet was always producing versions that operated at equal data rates or higher than substitutes.
+    - because Ethernet has been so popular that Ethernet hardware has become a commodity and is remarkably cheap.
 
 - Differences between Ethernet and Token Ring.
     - Token Ring: In the token ring a token ring passes over a physical ring. Token ring is defined by IEEE 802.5 standard. In token ring, there is a station and a special frame called token. A station in token ring can transmit data frame if it contains a token. After the successful transmission of data frame token are pointed(issued). Token ring is a Star shaped topology and handles priority in which some nodes may give priority to the token.
@@ -1010,10 +1016,13 @@
 
 - Why might a mesh (ad-hoc) topology be superior to a base station topology for communication in a natural disaster?
     - Because the mesh structure is easier to deploy and has better performance in changing environments. 
+    - Because there is no special base station node in a wireless mesh,a natural disaster could hardly affect the nodes.Meshes also offer fault tolerance by providing multiple routes for a message to get from point A to point B.
+
 
 - How can an ethernet communicate with an FDDI network?
     - Inter-connecting links of different types: Gateways/routers, the Internet Protocol
     - Connecting heterogeneous networks 【s6 p8】
+    - This relates to the internet protocol at the network layer. For inter-connecting different data links, we need the switch to convert between different data frame format. A switch that can play this role is called a router. Routers use the internet protocol to conduct the conversion.
 
 ### s5
 
@@ -1041,8 +1050,15 @@
 ### s6
 
 - Why is IP able to connect various link technologies to form a larger internetwork?
+    - Because data is contained in IP datagram,which is of uniform format.Moreover,the philosophy used in defining the IP service model was to make it undemanding enough that just about any network technology that might turn up in an internetwork would be able to provide the necessary service.
+
+- What aspect of IP addresses makes it necessary to have one address per network interface, rather than just one per host?
+    - IP addresses consist of two parts,usually referred to as a network part and a host part.Since a host may be connected to different networks,it is necessary to have one address per network interface.
 
 - What are the challenges in connecting two physical networks into a single logical network?
+
+- IP works as a "best-effort" service, that is, af a packet fails to reach its intended destination, the network does nothing. This indicates that IP packet delivery is not fully reliable. However, we know the data link layer has already addressed the reliable transmission issue with the "sliding window" algorithm. How does the data transmission become unreliable again when it comes to the IP protocol?
+    - Sliding window at the data link layer provides reliable dilivery in a direct link network. When it comes to IP, packets are forwarded across multiple direct link networks, where the forwarding is not guaranteed to be reliable.
 
 - IP addressing and physical (MAC) addressing?
     - The main difference between MAC and IP address is that, MAC Address is used to ensure the physical address of computer. It uniquely identifies the devices on a network. While IP address are used to uniquely identifies the connection of network with that device take part in a network.
@@ -1066,6 +1082,10 @@
 - Why the client's port numbers are different but the server's are the same? 【s11 p6】
 
 - What made WWW so successful?
+    - Web operates on demand
+    - Hyperlinks and search engines help a lot
+    - 信息获取、传输、共享
+    - user interaction
 
 - Why does HTTP run over TCP (rather than UDP)?
     - HTTP, FTP, SMTP and POP3 being application layer (layer 7) protocols can run on any of the underlying protocols, be it TCP/IP, IPX/SPX, UDP, or even on FCP.
@@ -1081,7 +1101,7 @@
 
 ### s12
 
-- Is is possible to map multiple domain names to one IP address? If yes, what kind of problems should be addressed?
+- Is it possible to map multiple domain names to one IP address? If yes, what kind of problems should be addressed?
 
 
 ### s13
