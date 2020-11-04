@@ -835,10 +835,125 @@
 
 - SMTP (Simple Mail Transfer Protocol) 【s12 p34】
 
+- POP/IMAP 【s12 p35】
+    - POP is simpler than IMAP
+    - POP3: one way, only transfers email to client
+    - IMAP4: two way
+
+- Webmail example 【s12 p38】
 
 
+---
 
 
+## 13. Other applications
+
+- Modern applications
+    - multimedia
+    - peer-to-peer
+    - blockchain
+    - storage networks
+
+### Multimedia
+
+- Key issues 【s13 p4】
+    - data volume, realtime transmission
+
+- Solutions
+    - compression, realtime scheduling, p2p
+
+### Peer-to-Peer
+
+- 对等，参与者本质上无区别。different from client/server. 【s13 p5】
+
+- Tracker and torrent
+
+- Example: BitTorrent 【s13 p7】
+    - tit-for-tat
+    - optimistically unchoke
+
+- Peer-to-Peer applications 【s13 p10】
+    - application areas: content distribution, document management, multimedia
+
+- Example: Bitcoin and Blockchain 【s13 p12】
+    - de-centralized ledger
+    - reliability requirements and solutions 【s13 p15】
+        - voting based on computation power
+        - ledger structure: blockchain
+    - Hash function 【s13 p16】
+    - Blockchain 【s13 p17】
+        - Nonce value, "mining"
+        - keep longer branch, discard the shorter one
+
+### Storage networks
+
+- Network Attached Storage (NAS) 【s13 p21】
+
+- Storage Area Networks (SAN) 【s13 p22】
+
+### Cloud computing
+
+- Cloud computing service model 【s13 p24】
+    - SaaS
+    - PaaS
+    - IaaS
+
+- Typical services
+
+- Key technologies 【s13 p26】
+    - Storage
+    - Distributed computing
+    - Virtualization
+
+
+---
+
+
+## 14. Security
+
+- Network security 【s14 p3】
+    - confidentiality
+    - authentication
+    - message integrity
+    - access and availability
+
+- Security threats and methods 【s14 p5】
+    - Information interception: Encryption
+    - Virus/Worms: Pattern scanning
+    - Trojan Horses: Firewalls, pattern scanning
+    - Intrusion: Passwords, detection
+    - DoS/DDoS attacks: No good solutions
+    - Session Hijacking: Authentication/Encryption
+    - Natural Disasters: Redundancy
+
+- Information interception
+
+- Asymmetric encryption 【s14 p8】
+    - Public/Private key
+    - Alice存有自己的private key，给Bob发Alice的public key，private key可以解密用对应public key加密的信息。而Bob反过来要给Alice签名，则需要用Bob自己的private key。
+    - Email encryption 【s14 p12】
+
+- Secure Sockets Layer (SSL) 【s14 p15】
+    - uses asymmetric encryption to privately share the session key; uses **symmetric** encryption to encrypt data
+
+- SSH 【s14 p18】
+    - SSH Tunnel 【s14 p20】
+
+
+---
+
+
+## 15. Review
+
+- How to connect two or more computers? 【s14 p25】
+
+- How to connect networks? 【s14 p26】
+
+- How can so many computers share the same link resources? 【s14 p27】
+    - Multiplexing
+    - Packet switching
+
+- How can we build the applications 【s14 p28】
 
 
 
@@ -927,6 +1042,11 @@
 
 - Why is IP able to connect various link technologies to form a larger internetwork?
 
+- What are the challenges in connecting two physical networks into a single logical network?
+
+- IP addressing and physical (MAC) addressing?
+    - The main difference between MAC and IP address is that, MAC Address is used to ensure the physical address of computer. It uniquely identifies the devices on a network. While IP address are used to uniquely identifies the connection of network with that device take part in a network.
+
 - What aspect of IP addresses makes it necessary to have one address per network interface, rather than just one per host?
     - IP addresses include the network/subnet, so that interfaces on different networks must have different network portions of the address. Alternatively, addresses include location information and different interfaces are at different locations, topologically. 
     - Point-to-point interfaces can be assigned a duplicate address (or no address), because the other endpoint of the link doesn't use the address to reach the interface; it just sends. Such interfaces, however, cannot be addressed by any other host in the network. 
@@ -964,5 +1084,8 @@
 - Is is possible to map multiple domain names to one IP address? If yes, what kind of problems should be addressed?
 
 
+### s13
+
+- Why are distributed computing and virtualization important in cloud computing?
 
 
