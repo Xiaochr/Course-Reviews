@@ -1076,10 +1076,17 @@
 - What are the limitations of the Network Layer?
     - See word. 
 
+- What is NAT?
+    - To access the Internet, one public IP address is needed, but we can use a private IP address in our private network. The idea of NAT is to allow multiple devices to access the Internet through a single public address. To achieve this, the translation of private IP address to a public IP address is required. Network Address Translation (NAT) is a process in which one or more local IP address is translated into one or more Global IP address and vice versa in order to provide Internet access to the local hosts. Also, it does the translation of port numbers i.e. masks the port number of the host with another port number, in the packet that will be routed to the destination. It then makes the corresponding entries of IP address and port number in the NAT table. NAT generally operates on router or firewall.
+
 
 ### s11
 
 - Why the client's port numbers are different but the server's are the same? 【s11 p6】
+    - two clients can connect to same server port because for each client we can assign a different socket (as client IP will definitely differ). Same client can also have two sockets connecting to same server port - since such sockets differ by SRC-PORT.
+    - A server socket listens on a single port. All established client connections on that server are associated with that same listening port on the server side of the connection. An established connection is uniquely identified by the combination of client-side and server-side IP/Port pairs. Multiple connections on the same server can share the same server-side IP/Port pair as long as they are associated with different client-side IP/Port pairs, and the server would be able to handle as many clients as available system resources allow it to.
+    - It is a common question and quite mind-boggling, which is – How does one server handle multiple connections? Let’s suppose that multiple clients have been simultaneously connected to port 80. This signifies that the “connection” actually represents a packet that consists of a header field containing the destination port, which is 80 in this case. There are many other ports that have different serial numbers to get identified. It is possible that multiple clients get connected to the same port depending on which client has been assigned which port. The sockets signify the exact end-point. It is quite an obvious fact that the IP address of each client will certainly differ, and so does the server’s IP address. Ports are just for general source and destination purpose and will hence allow multiple connections, that in turn will be diverted to the exact servers where they are supposed to reach.
+    - On a server, a process is listening on a port. Once it gets a connection, it hands it off to another thread. The communication never hogs the listening port. Connections are uniquely identified by the OS by the following 5-tuple: (local-IP, local-port, remote-IP, remote-port, protocol). If any element in the tuple is different, then this is a completely independent connection.
 
 - What made WWW so successful?
     - Web operates on demand
@@ -1102,10 +1109,15 @@
 ### s12
 
 - Is it possible to map multiple domain names to one IP address? If yes, what kind of problems should be addressed?
+    - Yes. It is called a Shared Web Hosting:
+        - In name-based virtual hosting, also called shared IP hosting, the virtual hosts serve multiple hostnames on a single machine with a single IP address. This is possible because when a web browser requests a resource from a web server using HTTP/1.1 it includes the requested hostname as part of the request. The server uses this information to determine which web site to show the user. When you register/purchase your domain name on a particular "registrars name server", your DNS settings are kept on their server, and in most cases point your domain to the Name Server of your hosting provider. This Name Server is where the IP number (currently associated with your domain name) resides.
 
 
 ### s13
 
 - Why are distributed computing and virtualization important in cloud computing?
+    - 云计算的核心是资源的网络化共享、应用，对应用者来讲实际上就是一种资源映射，透明的资源映射就是虚拟技术（就是你能像用本地资源一样用网络资源）。拟化是指计算机元件在虚拟的基础上而不是真实的基础上运行。虚拟化技术可以扩大硬件的容量，简化软件的重新配置过程。CPU的虚拟化技术可以单CPU模拟多CPU并行，允许一个平台同时运行多个操作系统，并且应用程序都可以在相互独立的空间内运行而互不影响，从而显著提高计算机的工作效率。
+    - 极大地降低了云计算系统应用程序的开发难度且提高了云计算系统的并行度和运行效率，这就是云计算的分布式计算系统
+    - 分布式的优势：更高的可扩展性、高容错和更高的冗余利用率、更低延时、更高的成本效益、高效
 
 
